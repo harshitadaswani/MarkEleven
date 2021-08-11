@@ -17,6 +17,7 @@ body {
 section {
   text-align: center;
   width: 100%;
+  margin-left: 2rem;
   margin: auto;
   max-width: max-content;
   color: #0b0c10;
