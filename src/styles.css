@@ -16,7 +16,7 @@ body {
 
 section {
   background-color: rgba(228, 230, 241, 0.65);
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -59,6 +59,14 @@ button {
   font-size: 1em;
 }
 
+.hidden {
+  display: none;
+}
+
+#output {
+  font-size: 1.5rem;
+}
+
 .footer {
   align-content: center;
   padding: 1rem;
@@ -78,8 +86,4 @@ button {
   padding: 0rem 1rem;
   margin: auto;
   margin-bottom: 1rem;
-}
-
-#output {
-  font-size: 1.5rem;
 }
