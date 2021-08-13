@@ -6,6 +6,8 @@ const birthDate = document.querySelector("#dob");
 const luckyNumber = document.querySelector("#luckyNo");
 const checkButton = document.querySelector("#check-Btn");
 const result = document.querySelector("#output");
+var closeBtn = document.querySelector("#close-btn");
+var privacyNoticeBox = document.querySelector("#policy-card");
 
 //Checking whether bday is lucky or not
 function divisiblity(sum, luckyNumber) {
@@ -44,6 +46,11 @@ function clickHandlerCheck() {
   }
 }
 
+function closeHandler() {
+  privacyNoticeBox.style.display = "none";
+}
+
+closeBtn.addEventListener("click", closeHandler);
 checkButton.addEventListener("click", clickHandlerCheck);
 
 function showError(text) {

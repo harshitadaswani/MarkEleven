@@ -26,19 +26,27 @@
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
+    <div style="height: 1rem;"></div>
+    <div id="policy-card">
+      <div id="close-btn"><img src="imgs/close.png" /></div>
+      This card informs you of our policies regarding the collection, use and
+      disclosure of Personal Information we receive from users of the site. We
+      aren't storing your personal information
+    </div>
+    <div style="height: 1rem;"></div>
+
     <section>
       <h1>Is your birthday lucky?</h1>
       <p>Enter your date of birth:</p>
       <input type="date" id="dob" />
-      <div id="bday-not-valid"></div>
       <div style="height: 1rem;"></div>
       <p>Enter your lucky number:</p>
       <input type="number" id="luckyNo" placeholder="Enter lucky number" />
       <div style="height: 2rem;"></div>
       <button id="check-Btn">Check</button>
-      <div style="height: 1rem;"></div>
-      <div id="output"></div>
+      <div style="height: 1rem;" id="output"></div>
     </section>
+
     <footer class="footer">
       <div class="social-container">
         <center>
@@ -56,6 +64,9 @@
           <a href="https://twitter.com/harshi_daswani" class="social-icons">
             <img src="imgs/twitter.png"
           /></a>
+          <a href="/" class="social-icons">
+            <img src="imgs/privacy.png" />
+          </a>
         </center>
       </div>
     </footer>
