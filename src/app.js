@@ -33,12 +33,14 @@ function clickHandlerCheck() {
   const Bdate = birthDate.value;
   const sum = calculateSum(Bdate);
 
-  if (luckyNumber.value && Bdate) {
+  if (luckyNumber.value > 1 && Bdate) {
     divisiblity(sum, luckyNumber.value);
   } else if (!Bdate) {
     showError("Enter valid Birthday to continue");
   } else if (!luckyNumber.value) {
     showError("Enter valid lucky number to continue");
+  } else {
+    showError("Enter valid values to continue");
   }
 }
 
