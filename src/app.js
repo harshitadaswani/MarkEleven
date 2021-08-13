@@ -13,12 +13,12 @@ function divisiblity(sum, luckyNumber) {
 }
 
 function clickHandlerCheck() {
-  const Bdate = birthDate.Value;
+  const Bdate = birthDate.value;
   console.log(Bdate);
   const sum = calculateSum(Bdate);
   console.log(sum);
   if (sum && Bdate) {
-    divisiblity(sum, luckyNumber.Value);
+    divisiblity(sum, luckyNumber.value);
   } else {
     result.innerText = "Enter values to continue";
   }
