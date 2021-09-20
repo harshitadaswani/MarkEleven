@@ -1,6 +1,3 @@
-//Checking Javascript
-console.log("script is working");
-
 //Referencing elements
 const birthDate = document.querySelector("#dob");
 const luckyNumber = document.querySelector("#luckyNo");
@@ -35,7 +32,7 @@ function clickHandlerCheck() {
   const Bdate = birthDate.value;
   const sum = calculateSum(Bdate);
 
-  if (luckyNumber.value > 1 && Bdate) {
+  if (luckyNumber.value >= 1 && Bdate) {
     divisiblity(sum, luckyNumber.value);
   } else if (!Bdate) {
     showError("Enter valid Birthday to continue");
